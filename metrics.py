@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Upside Travel, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,9 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import datadog
 import os
-from common import *  # noqa
+
+import datadog
+from common import AV_STATUS_CLEAN
+from common import AV_STATUS_INFECTED
 
 
 def send(env, bucket, key, status):
